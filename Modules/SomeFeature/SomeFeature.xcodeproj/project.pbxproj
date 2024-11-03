@@ -30,7 +30,6 @@
 /* Begin PBXFileReference section */
 		19B9F1C52CD7BFE70064F41A /* SomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B9F1C82CD7BFE70064F41A /* SomeFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeFeature.h; sourceTree = "<group>"; };
-		19B9F1D22CD7BFE70064F41A /* SomeFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFeatureTests.swift; sourceTree = "<group>"; };
 		19B9F1EA2CD7C0740064F41A /* SomeFeatureHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFeatureHomeView.swift; sourceTree = "<group>"; };
 		19B9F2772CD7C4120064F41A /* SomeServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SomeServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				19B9F1C72CD7BFE70064F41A /* SomeFeature */,
-				19B9F1D12CD7BFE70064F41A /* SomeFeatureTests */,
 				19B9F1C62CD7BFE70064F41A /* Products */,
 				19B9F2762CD7C4120064F41A /* Frameworks */,
 			);
@@ -72,14 +70,6 @@
 				19B9F1EA2CD7C0740064F41A /* SomeFeatureHomeView.swift */,
 			);
 			path = SomeFeature;
-			sourceTree = "<group>";
-		};
-		19B9F1D12CD7BFE70064F41A /* SomeFeatureTests */ = {
-			isa = PBXGroup;
-			children = (
-				19B9F1D22CD7BFE70064F41A /* SomeFeatureTests.swift */,
-			);
-			path = SomeFeatureTests;
 			sourceTree = "<group>";
 		};
 		19B9F2762CD7C4120064F41A /* Frameworks */ = {

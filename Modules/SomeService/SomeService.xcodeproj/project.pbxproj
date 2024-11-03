@@ -11,7 +11,33 @@
 		19B9F26B2CD7C3430064F41A /* SomeServiceImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B9F25F2CD7C3430064F41A /* SomeServiceImplementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19B9F2732CD7C3800064F41A /* SomeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9F2722CD7C3800064F41A /* SomeServiceProtocol.swift */; };
 		19B9F2752CD7C3A60064F41A /* ConcreteSomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9F2742CD7C3A60064F41A /* ConcreteSomeService.swift */; };
+		19B9F27C2CD7CBDA0064F41A /* SomeServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2232CD7C2BE0064F41A /* SomeServiceInterface.framework */; };
+		19B9F27D2CD7CBDA0064F41A /* SomeServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2232CD7C2BE0064F41A /* SomeServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19B9F27E2CD7CBDA0064F41A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B9F1ED2CD7C1F90064F41A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B9F2222CD7C2BE0064F41A;
+			remoteInfo = SomeServiceInterface;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19B9F2802CD7CBDA0064F41A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19B9F27D2CD7CBDA0064F41A /* SomeServiceInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19B9F2232CD7C2BE0064F41A /* SomeServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SomeServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B9F27C2CD7CBDA0064F41A /* SomeServiceInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +73,7 @@
 				19B9F2242CD7C2BE0064F41A /* SomeServiceInterface */,
 				19B9F25E2CD7C3430064F41A /* SomeServiceImplementation */,
 				19B9F1F72CD7C1F90064F41A /* Products */,
+				19B9F27B2CD7CBDA0064F41A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +102,13 @@
 				19B9F2742CD7C3A60064F41A /* ConcreteSomeService.swift */,
 			);
 			path = SomeServiceImplementation;
+			sourceTree = "<group>";
+		};
+		19B9F27B2CD7CBDA0064F41A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,10 +159,12 @@
 				19B9F2592CD7C3430064F41A /* Sources */,
 				19B9F25A2CD7C3430064F41A /* Frameworks */,
 				19B9F25B2CD7C3430064F41A /* Resources */,
+				19B9F2802CD7CBDA0064F41A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19B9F27F2CD7CBDA0064F41A /* PBXTargetDependency */,
 			);
 			name = SomeServiceImplementation;
 			productName = SomeServiceImplementation;
@@ -208,6 +245,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B9F27F2CD7CBDA0064F41A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B9F2222CD7C2BE0064F41A /* SomeServiceInterface */;
+			targetProxy = 19B9F27E2CD7CBDA0064F41A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		19B9F2062CD7C1F90064F41A /* Debug */ = {

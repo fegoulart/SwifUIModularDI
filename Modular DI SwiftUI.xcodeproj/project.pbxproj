@@ -11,21 +11,24 @@
 		19B9F1B02CD7BEC80064F41A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9F1AF2CD7BEC80064F41A /* ContentView.swift */; };
 		19B9F1B22CD7BECA0064F41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B9F1B12CD7BECA0064F41A /* Assets.xcassets */; };
 		19B9F1B52CD7BECA0064F41A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B9F1B42CD7BECA0064F41A /* Preview Assets.xcassets */; };
-		19B9F21A2CD7C2730064F41A /* SomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2182CD7C2730064F41A /* SomeFeature.framework */; };
-		19B9F21B2CD7C2730064F41A /* SomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2182CD7C2730064F41A /* SomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		19B9F21C2CD7C2730064F41A /* SomeService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2192CD7C2730064F41A /* SomeService.framework */; };
-		19B9F21D2CD7C2730064F41A /* SomeService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2192CD7C2730064F41A /* SomeService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B9F2852CD7CC1A0064F41A /* SomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2822CD7CC1A0064F41A /* SomeFeature.framework */; };
+		19B9F2862CD7CC1A0064F41A /* SomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2822CD7CC1A0064F41A /* SomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B9F2872CD7CC1A0064F41A /* SomeServiceImplementation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2832CD7CC1A0064F41A /* SomeServiceImplementation.framework */; };
+		19B9F2882CD7CC1A0064F41A /* SomeServiceImplementation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2832CD7CC1A0064F41A /* SomeServiceImplementation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B9F2892CD7CC1A0064F41A /* SomeServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2842CD7CC1A0064F41A /* SomeServiceInterface.framework */; };
+		19B9F28A2CD7CC1A0064F41A /* SomeServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19B9F2842CD7CC1A0064F41A /* SomeServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		19B9F1E92CD7C05A0064F41A /* Embed Frameworks */ = {
+		19B9F28B2CD7CC1A0064F41A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				19B9F21D2CD7C2730064F41A /* SomeService.framework in Embed Frameworks */,
-				19B9F21B2CD7C2730064F41A /* SomeFeature.framework in Embed Frameworks */,
+				19B9F2882CD7CC1A0064F41A /* SomeServiceImplementation.framework in Embed Frameworks */,
+				19B9F28A2CD7CC1A0064F41A /* SomeServiceInterface.framework in Embed Frameworks */,
+				19B9F2862CD7CC1A0064F41A /* SomeFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +43,10 @@
 		19B9F1B42CD7BECA0064F41A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19B9F2182CD7C2730064F41A /* SomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B9F2192CD7C2730064F41A /* SomeService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SomeService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B9F2812CD7CC110064F41A /* Modular-DI-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Modular-DI-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		19B9F2822CD7CC1A0064F41A /* SomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B9F2832CD7CC1A0064F41A /* SomeServiceImplementation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SomeServiceImplementation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B9F2842CD7CC1A0064F41A /* SomeServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SomeServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B9F21C2CD7C2730064F41A /* SomeService.framework in Frameworks */,
-				19B9F21A2CD7C2730064F41A /* SomeFeature.framework in Frameworks */,
+				19B9F2872CD7CC1A0064F41A /* SomeServiceImplementation.framework in Frameworks */,
+				19B9F2892CD7CC1A0064F41A /* SomeServiceInterface.framework in Frameworks */,
+				19B9F2852CD7CC1A0064F41A /* SomeFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +83,7 @@
 		19B9F1AC2CD7BEC80064F41A /* Modular DI SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				19B9F2812CD7CC110064F41A /* Modular-DI-SwiftUI-Info.plist */,
 				19B9F1AD2CD7BEC80064F41A /* Modular_DI_SwiftUIApp.swift */,
 				19B9F1AF2CD7BEC80064F41A /* ContentView.swift */,
 				19B9F1B12CD7BECA0064F41A /* Assets.xcassets */,
@@ -94,6 +103,9 @@
 		19B9F1E62CD7C05A0064F41A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19B9F2822CD7CC1A0064F41A /* SomeFeature.framework */,
+				19B9F2832CD7CC1A0064F41A /* SomeServiceImplementation.framework */,
+				19B9F2842CD7CC1A0064F41A /* SomeServiceInterface.framework */,
 				19B9F2182CD7C2730064F41A /* SomeFeature.framework */,
 				19B9F2192CD7C2730064F41A /* SomeService.framework */,
 			);
@@ -110,7 +122,7 @@
 				19B9F1A62CD7BEC80064F41A /* Sources */,
 				19B9F1A72CD7BEC80064F41A /* Frameworks */,
 				19B9F1A82CD7BEC80064F41A /* Resources */,
-				19B9F1E92CD7C05A0064F41A /* Embed Frameworks */,
+				19B9F28B2CD7CC1A0064F41A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Modular DI SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Modular-DI-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -336,6 +349,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Modular DI SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Modular-DI-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
